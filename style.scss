@@ -1,0 +1,431 @@
+// Custom Colors
+
+$blue : #5175FF;
+$pale-blue: #829CFF;
+$light-blue: #cdd6fb;
+$gray-blue: #c7ceee;
+$dark-navy: #333950;
+$black-navy: #25293A;
+$gray: #747B95;
+$medium-gray: #e2e2e2;
+$light-gray: #fafafa;
+$salmon: #F05B5B;
+$white: #FFFFFF;
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+
+ button{
+    margin: 2em 0;
+    padding: 1.5em 3em;
+    border: none;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 0.85em;
+    letter-spacing: .75px;
+    cursor: pointer;
+ }
+
+.btn-blue{
+    color: $white;
+    background-color: $blue;
+}
+
+.btn-blue:hover{
+    background-color: $pale-blue;
+}
+
+.btn-pale-blue{
+    background-color: $light-blue;
+    color: $blue;
+}
+
+.btn-pale-blue:hover{
+    background-color: $gray-blue;
+}
+
+#error-icon{
+    display: none;
+}
+
+.input-container{
+    display: flex;
+    margin: 1em 0;
+    padding: 0 10px;
+    align-items: center;
+    border-bottom: 2px solid $medium-gray;
+}
+
+.error-text::placeholder{
+    color: $salmon;
+}
+
+
+input{
+    &:active{
+        outline: none;
+    }
+    &:focus{
+        background-color: $light-gray;
+        outline: none;
+    }
+}
+
+body{
+    padding: 0 1.5em;
+    font-size: 16px;
+    background-image: url(./assets/home/bg-pattern-header.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+    background-color: $light-gray;
+    color:$gray;
+}
+
+header{
+    margin: 3em;
+    text-align: center;
+}
+
+.section-intro{
+    margin: 1em 0 5em 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    img{
+        width: 55%;
+    }
+}
+
+.container-text{
+    text-align: center;
+}
+
+.heading-largest{
+    margin: 1em 0;
+    font-size: 2.5em;
+    color: $dark-navy;
+}
+
+p{
+    margin: 1em 0;
+    line-height: 1.75em;
+}
+
+.section-price-tiers{
+    text-align: center;
+}
+
+.container-price-tier{
+    margin: 2em 0;
+    padding: 2em 0;
+    border-radius: 10px;
+    background-color: $white;
+    &:nth-child(2){
+        background-color: $blue;
+        background-image: url('./assets/home/bg-pattern-pricing.svg');
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-position: center;
+        color: $white;
+        .heading-small{
+            color: $white;
+        }
+        .text-large{
+            color: $white;
+        }
+        button{
+            background-color: $white;
+            border: 1px solid transparent;
+            &:hover{
+                color: $white;
+                background: none;
+                border: 1px solid $white;
+            }
+        }
+    }
+}
+
+
+.heading-small{
+    color: $dark-navy;
+}
+
+.text-large{
+    margin: 0.5em 0 0 0;
+    color: $dark-navy;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.feat-list{
+    margin: 3em 0;
+}
+
+
+.text-uppercase{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+footer{
+    position: absolute;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: -100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 200px 0 1050px $black-navy;
+    background-color: $black-navy;
+    background-image: url('./assets/home/bg-pattern-footer.svg');
+    background-position-x: center;
+    background-position-y: -200px;
+    color: $white;
+    text-align: center;
+}
+
+.text-blue{
+    color: $blue;
+}
+
+
+.container-countdown{
+    display: flex;
+    .time-card{
+        margin: 1em 5px;
+        padding: 0.25em 0;
+        width: 75px;
+        background-color: $dark-navy;
+        font-size: 0.85em;
+        text-align: center;
+        border-radius: 10px;
+        .text-large{
+            color: $white;
+            margin-bottom: -.75em;
+            text-align: center;
+            font-size: 2em;
+        }
+    }
+}
+
+.signup-body{
+    background: linear-gradient(to top, $black-navy 25%, $light-gray 20px);
+}
+
+.container-signup-text{
+    text-align: center;
+    .heading-largest{
+        margin-top: 2em;
+    }
+    .text-uppercase{
+        margin-top: 4em;
+    }
+}
+
+.countdown-light{
+    justify-content: center;
+    margin-bottom: 4em;
+    .time-card{
+        background-color: $light-blue;
+        color: $dark-navy;
+        .text-large{
+            color: $blue;
+        }
+    }
+}
+
+form{
+    margin-bottom: 4em;
+    padding: 1em;
+    background-color: $white;
+    border-radius: 10px;
+    color: $gray;
+    input{
+        width: 100%;
+        padding: 1.5em 1em;
+        border: none;
+        
+    }
+    button{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    body{
+        padding: 2em 3em;
+    }
+
+    header{
+        margin: 3em 0 1em 0;
+        text-align: left;
+    }
+    
+    .section-intro {
+        flex-direction: row;
+        .container-text{
+            margin-right: 1em;
+            text-align: left;
+        }
+        img{
+        width: 40%;
+        }
+    }
+
+    .container-price-tier{
+        position: relative;
+        padding: 1em 4em 70px 4em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        button{
+            position: absolute;
+            bottom: 20px;
+            left: 4em;
+        }
+        .text-large{
+            margin: 0;
+        }
+        .text-dark{
+            margin: 0;
+        }
+    }
+    .container-countdown{
+        .time-card{
+            padding: 1em 0;
+            width:115px;
+            .text-large{
+                margin-bottom: -.25em;
+                font-size: 4em;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+
+    footer{
+        padding-bottom: 100px;
+    }
+
+    form{
+        margin: auto;
+        padding: 0 2em;
+        margin-bottom: 100px;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    body{
+        padding: 2em 5em;
+        background-position-y: -500px;
+        background-position-x: 500px;
+        background-size: 80%;
+    }
+
+    header{
+        margin: 3em 5em 1em 5em;
+        text-align: left;
+    }
+    
+    .section-intro {
+        margin: 1em auto 5em auto;
+        flex-direction: row;
+        max-width: 1200px;
+        .container-text{
+            margin-right: 1em;
+            text-align: left;
+        }
+        img{
+        width: 40%;
+        }
+    }
+
+    .section-price-tiers{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-price-tier{
+        margin: 0 1.5em;
+        width: 375px;
+    }
+
+    .container-countdown{
+        .time-card{
+            padding: 1em 0;
+            width:115px;
+            .text-large{
+                margin-bottom: -.25em;
+                font-size: 4em;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+
+    footer{
+        margin-top: 150px;
+        padding-bottom: 100px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        box-shadow: 0 200px 0 70vh $black-navy;
+        background-repeat: no-repeat;
+        background-position-y: 100px;
+        background-position-x: -400px;
+        background-size: 80%;
+    }
+
+    .signup-body{
+        background: linear-gradient(to left, $black-navy 25%, $light-gray 20px);
+    }
+
+    .container-flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container-signup-text{
+        
+        padding: 0;
+        text-align: left;
+        width: 55%;
+        max-width: 600px;
+        .text-uppercase{
+            margin: 2em 0 1em 0;
+            text-align: left;
+        }
+    }
+
+    .countdown-light{
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    form{
+        margin: 0;
+        padding: 2em;
+        width: 30%;
+        max-width: 500px;
+    }
+
+    
+}

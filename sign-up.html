@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Officelite coming soon site</title>
+  
+</head>
+<body class="signup-body">
+
+  <header>
+    <a href="./index.html"><img src="./assets/shared/logo.svg"></a>
+  </header>
+  <div class="container-flex">
+  <div class="container-signup-text">
+  
+    <h1 class="heading-largest">Work smarter. Save time.</h1>
+
+    <p>Easily manage your projects. Get on the list and receive in-app perks available only to 
+    early subscribers. We are moving into final development and getting ready for official launch soon.</p>
+    
+    <p class="text-uppercase">Coming <span class="text-blue">31 May 2020</span></p>
+
+    <div class="container-countdown countdown-light">
+
+        <div class="time-card">
+          <p class="text-large" id="days">...</p>
+          <p>days</p>
+        </div>
+      
+        <div class="time-card">
+          <p class="text-large" id="hours">...</p>
+          <p>hours</p>
+        </div>
+
+        <div class="time-card">
+          <p class="text-large" id="minutes">...</p>
+          <p>minutes</p>
+        </div>
+
+        <div class="time-card">
+          <p class="text-large" id="seconds">...</p>
+          <p>seconds</p>
+        </div>
+
+    </div>
+
+  </div>
+
+  <form name="signUp">
+
+    <span class="input-container"><input name="name" type="text" placeholder="name" required><img id="error-icon" src="./assets/sign-up/icon-cross.svg" alt="error"></span>
+
+    <span class="input-container"><input name="email" type="text" placeholder="email" required><img  id="error-icon" src="./assets/sign-up/icon-cross.svg" alt="error"></span>
+
+    <span class="input-container"><input name="phone" type="text" placeholder="phone number" required><img  id="error-icon" src="./assets/sign-up/icon-cross.svg" alt="error"></span>
+
+    <span class="input-container"><input name="company" type="text" placeholder="company" required><img  id="error-icon" src="./assets/sign-up/icon-cross.svg" alt="error"></span>
+
+    <button name="submit-btn" class="btn-blue">Get on the list</button>
+
+  </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
